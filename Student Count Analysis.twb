@@ -1,0 +1,1027 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0723.1135                               -->
+<workbook original-version='18.1' source-build='2025.2.1 (20252.25.0710.1712)' source-platform='win' version='18.1' xml:base='https://prod-apsoutheast-b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='StudentCountAnalysis' path='/t/23510241dypit-821d77fb49/workbooks' revision='1.0' site='23510241dypit-821d77fb49' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Depression Student Dataset (Tableau Project 1)' inline='true' name='federated.1etkpl11ox8irr1fgh69n0rs1fla' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GANESH' name='sqlserver.00a663m0a3wbul1fqaxge025lopg'>
+            <connection authentication='sspi' class='sqlserver' dbname='Tableau Project 1' odbc-native-protocol='yes' one-time-sql='' server='GANESH' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='sqlserver.00a663m0a3wbul1fqaxge025lopg' name='Depression Student Dataset' table='[dbo].[Depression Student Dataset]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Academic_Pressure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Academic_Pressure]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Academic_Pressure</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Study_Satisfaction</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Study_Satisfaction]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Study_Satisfaction</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sleep_Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sleep_Duration]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Sleep_Duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dietary_Habits</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dietary_Habits]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Dietary_Habits</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Have_you_ever_had_suicidal_thoughts</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Have_you_ever_had_suicidal_thoughts]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Have_you_ever_had_suicidal_thoughts</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Study_Hours</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[Study_Hours]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Study_Hours</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Financial_Stress</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[Financial_Stress]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Financial_Stress</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family_History_of_Mental_Illness</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Family_History_of_Mental_Illness]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Family_History_of_Mental_Illness</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depression</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Depression]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Depression</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age_Group]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Age_Group</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index_Column</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Index_Column]</local-name>
+            <parent-name>[Depression Student Dataset]</parent-name>
+            <remote-alias>Index_Column</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Academic Pressure' datatype='integer' datatype-customized='true' name='[Academic_Pressure]' role='dimension' type='ordinal' />
+      <column caption='Age Group' datatype='string' name='[Age_Group]' role='dimension' type='nominal' />
+      <column caption='Dietary Habits' datatype='string' name='[Dietary_Habits]' role='dimension' type='nominal' />
+      <column caption='Family History of Mental Illness' datatype='boolean' name='[Family_History_of_Mental_Illness]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Financial Stress' datatype='integer' name='[Financial_Stress]' role='dimension' type='ordinal' />
+      <column caption='Have you ever had suicidal thoughts' datatype='boolean' name='[Have_you_ever_had_suicidal_thoughts]' role='dimension' type='nominal' />
+      <column caption='Index Column' datatype='integer' name='[Index_Column]' role='measure' type='quantitative' />
+      <column caption='Sleep Duration' datatype='string' name='[Sleep_Duration]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Study Hours' datatype='integer' name='[Study_Hours]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Study Satisfaction' datatype='integer' datatype-customized='true' name='[Study_Satisfaction]' role='dimension' type='ordinal' />
+      <column caption='Depression Student Dataset' datatype='table' name='[__tableau_internal_object_id__].[Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C]' role='measure' type='quantitative' />
+      <group caption='Action (Financial Stress)' hidden='true' name='[Action (Financial Stress)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Financial_Stress]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Study Satisfaction)' hidden='true' name='[Action (Study Satisfaction)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Study_Satisfaction]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Depression Student Dataset' id='Depression Student Dataset_01F542B0C1DE4E878CA4116DB9656A8C'>
+            <properties context=''>
+              <relation connection='sqlserver.00a663m0a3wbul1fqaxge025lopg' name='Depression Student Dataset' table='[dbo].[Depression Student Dataset]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_9686FE3884344332AF3BBBB327E7DA29]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Student Count Analysis' type='sheet' worksheet='SH &amp; SC' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Student Count Analysis' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_8E679B8201FC4C848F2A0CD29650A7C0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Student Count Analysis' type='sheet' worksheet='SD &amp; SC' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Student Count Analysis' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_1BCB7C296D3648DE858C6F33A1509BBF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Student Count Analysis' type='sheet' worksheet='SS &amp; SC' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Student Count Analysis' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_D5BF29185EA34545B539A97A6CFB983A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Student Count Analysis' type='sheet' worksheet='FS &amp; SC' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Student Count Analysis' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_262491712C1D4A2B8263299FF5DD5326]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Student Count Analysis' type='sheet' worksheet='AP &amp; SC' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Student Count Analysis' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='AP &amp; SC'>
+      <repository-location id='APSC' path='/t/23510241dypit-821d77fb49/workbooks/StudentCountAnalysis' revision='' site='23510241dypit-821d77fb49' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12' italic='true' underline='true'>Academic Pressure(AP) &amp; Student Count(C)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Depression Student Dataset (Tableau Project 1)' name='federated.1etkpl11ox8irr1fgh69n0rs1fla' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1etkpl11ox8irr1fgh69n0rs1fla'>
+            <column aggregation='Sum' caption='Academic Pressure' datatype='integer' datatype-customized='true' name='[Academic_Pressure]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Financial Stress' datatype='integer' name='[Financial_Stress]' role='dimension' type='ordinal' />
+            <column caption='Index Column' datatype='integer' name='[Index_Column]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Study Satisfaction' datatype='integer' datatype-customized='true' name='[Study_Satisfaction]' role='dimension' type='ordinal' />
+            <column-instance column='[Index_Column]' derivation='Count' name='[cnt:Index_Column:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Academic_Pressure]' derivation='None' name='[none:Academic_Pressure:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]'>
+            <groupfilter function='level-members' level='[Financial_Stress]' user:ui-action-filter='[Action4_D5BF29185EA34545B539A97A6CFB983A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]'>
+            <groupfilter function='level-members' level='[Study_Satisfaction]' user:ui-action-filter='[Action3_1BCB7C296D3648DE858C6F33A1509BBF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Academic_Pressure:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]</column>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Academic_Pressure:ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Academic_Pressure:ok]' />
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'><![CDATA[AP-<[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Academic_Pressure:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[SC-<[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4a6c8' />
+                <format attr='has-stroke' value='false' />
+                <format attr='size' value='0.84558010101318359' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]</rows>
+        <cols>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Academic_Pressure:ok]</cols>
+      </table>
+      <simple-id uuid='{8F2ADC43-5A08-484C-9FCC-FEE384ABFD75}' />
+    </worksheet>
+    <worksheet name='FS &amp; SC'>
+      <repository-location id='FSSC' path='/t/23510241dypit-821d77fb49/workbooks/StudentCountAnalysis' revision='' site='23510241dypit-821d77fb49' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12' italic='true'>Financial Stress(FS) &amp; Student Count(SC)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Depression Student Dataset (Tableau Project 1)' name='federated.1etkpl11ox8irr1fgh69n0rs1fla' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1etkpl11ox8irr1fgh69n0rs1fla'>
+            <column aggregation='Sum' caption='Financial Stress' datatype='integer' name='[Financial_Stress]' role='dimension' type='ordinal' />
+            <column caption='Index Column' datatype='integer' name='[Index_Column]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Study Satisfaction' datatype='integer' datatype-customized='true' name='[Study_Satisfaction]' role='dimension' type='ordinal' />
+            <column-instance column='[Index_Column]' derivation='Count' name='[cnt:Index_Column:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Financial_Stress]' derivation='None' name='[none:Financial_Stress:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]'>
+            <groupfilter function='level-members' level='[Study_Satisfaction]' user:ui-action-filter='[Action3_1BCB7C296D3648DE858C6F33A1509BBF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Financial_Stress:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Financial_Stress:ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Financial_Stress:ok]' />
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'><![CDATA[FS-<[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Financial_Stress:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[SC-<[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#bab0ac' />
+                <format attr='has-stroke' value='false' />
+                <format attr='size' value='0.75762432813644409' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]</rows>
+        <cols>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Financial_Stress:ok]</cols>
+      </table>
+      <simple-id uuid='{7D2CDE8D-F9B6-410A-A676-371354962B35}' />
+    </worksheet>
+    <worksheet name='SD &amp; SC'>
+      <repository-location id='SDSC' path='/t/23510241dypit-821d77fb49/workbooks/StudentCountAnalysis' revision='' site='23510241dypit-821d77fb49' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12' italic='true' underline='true'>Sleep Duratioin(SD) &amp; Student Count </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Depression Student Dataset (Tableau Project 1)' name='federated.1etkpl11ox8irr1fgh69n0rs1fla' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1etkpl11ox8irr1fgh69n0rs1fla'>
+            <column aggregation='Sum' caption='Financial Stress' datatype='integer' name='[Financial_Stress]' role='dimension' type='ordinal' />
+            <column caption='Index Column' datatype='integer' name='[Index_Column]' role='measure' type='quantitative' />
+            <column caption='Sleep Duration' datatype='string' name='[Sleep_Duration]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Study Satisfaction' datatype='integer' datatype-customized='true' name='[Study_Satisfaction]' role='dimension' type='ordinal' />
+            <column-instance column='[Index_Column]' derivation='Count' name='[cnt:Index_Column:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleep_Duration]' derivation='None' name='[none:Sleep_Duration:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]'>
+            <groupfilter function='level-members' level='[Financial_Stress]' user:ui-action-filter='[Action4_D5BF29185EA34545B539A97A6CFB983A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]'>
+            <groupfilter function='level-members' level='[Study_Satisfaction]' user:ui-action-filter='[Action3_1BCB7C296D3648DE858C6F33A1509BBF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]</column>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.66966849565505981' />
+                <format attr='mark-color' value='#d4d4d4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Sleep_Duration:nk]</cols>
+      </table>
+      <simple-id uuid='{73D8057A-A049-416F-9E76-6B14C2160AA5}' />
+    </worksheet>
+    <worksheet name='SH &amp; SC'>
+      <repository-location id='SHSC' path='/t/23510241dypit-821d77fb49/workbooks/StudentCountAnalysis' revision='' site='23510241dypit-821d77fb49' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12' italic='true' underline='true'>Study Hours (SH) &amp; Student Count (SC)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Depression Student Dataset (Tableau Project 1)' name='federated.1etkpl11ox8irr1fgh69n0rs1fla' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1etkpl11ox8irr1fgh69n0rs1fla'>
+            <column aggregation='Sum' caption='Financial Stress' datatype='integer' name='[Financial_Stress]' role='dimension' type='ordinal' />
+            <column caption='Index Column' datatype='integer' name='[Index_Column]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Study Hours' datatype='integer' name='[Study_Hours]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Study Satisfaction' datatype='integer' datatype-customized='true' name='[Study_Satisfaction]' role='dimension' type='ordinal' />
+            <column-instance column='[Index_Column]' derivation='Count' name='[cnt:Index_Column:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Study_Hours]' derivation='None' name='[none:Study_Hours:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]'>
+            <groupfilter function='level-members' level='[Financial_Stress]' user:ui-action-filter='[Action4_D5BF29185EA34545B539A97A6CFB983A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]'>
+            <groupfilter function='level-members' level='[Study_Satisfaction]' user:ui-action-filter='[Action3_1BCB7C296D3648DE858C6F33A1509BBF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Study Satisfaction)]</column>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>SC-&lt;</run>
+                <run bold='true'>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f1ce63' />
+                <format attr='mark-transparency' value='91' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#555555' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]</rows>
+        <cols>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Study_Hours:ok]</cols>
+      </table>
+      <simple-id uuid='{DBBD0A98-0507-4637-BC82-16146660E93A}' />
+    </worksheet>
+    <worksheet name='SS &amp; SC'>
+      <repository-location id='SSSC' path='/t/23510241dypit-821d77fb49/workbooks/StudentCountAnalysis' revision='' site='23510241dypit-821d77fb49' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12' italic='true' underline='true'>Study Satisfaction(SS) &amp; Student Count(SC)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Depression Student Dataset (Tableau Project 1)' name='federated.1etkpl11ox8irr1fgh69n0rs1fla' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1etkpl11ox8irr1fgh69n0rs1fla'>
+            <column aggregation='Sum' caption='Financial Stress' datatype='integer' name='[Financial_Stress]' role='dimension' type='ordinal' />
+            <column caption='Index Column' datatype='integer' name='[Index_Column]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Study Satisfaction' datatype='integer' datatype-customized='true' name='[Study_Satisfaction]' role='dimension' type='ordinal' />
+            <column-instance column='[Index_Column]' derivation='Count' name='[cnt:Index_Column:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Study_Satisfaction]' derivation='None' name='[none:Study_Satisfaction:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]'>
+            <groupfilter function='level-members' level='[Financial_Stress]' user:ui-action-filter='[Action4_D5BF29185EA34545B539A97A6CFB983A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[Action (Financial Stress)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Study_Satisfaction:ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Study_Satisfaction:ok]' />
+              <text column='[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'><![CDATA[SS-<[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Study_Satisfaction:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[SC-<[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.64767956733703613' />
+                <format attr='mark-color' value='#ff9d9a' />
+                <format attr='has-stroke' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[cnt:Index_Column:qk]</rows>
+        <cols>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Study_Satisfaction:ok]</cols>
+      </table>
+      <simple-id uuid='{9B844A05-AB91-4AB1-8957-4DE1BCA00A54}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Student Count Analysis'>
+      <repository-location id='StudentCountAnalysis' path='/t/23510241dypit-821d77fb49/workbooks/StudentCountAnalysis' revision='' site='23510241dypit-821d77fb49' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='33255' id='3' name='AP &amp; SC' w='40797' x='845' y='65687'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f2f6f7' />
+          </zone-style>
+        </zone>
+        <zone h='33255' id='4' name='FS &amp; SC' w='40797' x='42607' y='65687'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f2f6f7' />
+          </zone-style>
+        </zone>
+        <zone h='35488' id='5' name='SS &amp; SC' w='82498' x='845' y='29260'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f2f6f7' />
+          </zone-style>
+        </zone>
+        <zone h='27027' id='6' name='SD &amp; SC' w='40797' x='845' y='1175'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f2f6f7' />
+          </zone-style>
+        </zone>
+        <zone h='27027' id='7' name='SH &amp; SC' w='40797' x='42426' y='1175'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f2f6f7' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='8' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone fixed-size='215' h='27027' id='6' is-fixed='true' name='SD &amp; SC' w='40797' x='845' y='1175'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f2f6f7' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='215' h='27027' id='7' is-fixed='true' name='SH &amp; SC' w='40797' x='42426' y='1175'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f2f6f7' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35488' id='5' is-fixed='true' name='SS &amp; SC' w='82498' x='845' y='29260'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f2f6f7' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='33255' id='3' is-fixed='true' name='AP &amp; SC' w='40797' x='845' y='65687'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f2f6f7' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='33255' id='4' is-fixed='true' name='FS &amp; SC' w='40797' x='42607' y='65687'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f2f6f7' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{83B5CC57-A4B1-4ECD-A3BD-5F4A4D3D6A8B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='AP &amp; SC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Academic_Pressure:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{16F76DDB-2199-4F39-8A78-86B8AD4A5F6C}' />
+    </window>
+    <window class='worksheet' name='FS &amp; SC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Financial_Stress:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{59C4B880-5A4A-416A-98FF-4193E1C16174}' />
+    </window>
+    <window class='worksheet' name='SS &amp; SC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Study_Satisfaction:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{249F0331-59E3-46AD-9FF9-99C08F32D53F}' />
+    </window>
+    <window class='worksheet' name='SD &amp; SC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Sleep_Duration:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7619D4A2-22DC-48FC-A495-3C8599DC9770}' />
+    </window>
+    <window class='worksheet' name='SH &amp; SC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1etkpl11ox8irr1fgh69n0rs1fla].[none:Study_Hours:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7753136C-0384-4482-A7AA-719C5DA055B8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Student Count Analysis'>
+      <viewpoints>
+        <viewpoint name='AP &amp; SC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='FS &amp; SC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='SD &amp; SC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='SH &amp; SC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='SS &amp; SC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AFA96536-9C3D-4A60-9E3F-71EBF8169E83}' />
+    </window>
+  </windows>
+</workbook>
